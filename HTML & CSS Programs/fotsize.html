@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Font Size Comparison</title>
+  <style>
+    body {
+      font-size: 16px; /* Root font size */
+    }
+
+    .px-example {
+      font-size: 16px; /* fixed size */
+    }
+
+    .em-parent {
+      font-size: 20px; /* parent font size */
+    }
+
+    .em-example {
+      font-size: 1.2em; /* relative to parent (20px × 1.2 = 24px) */
+    }
+
+    .rem-example {
+      font-size: 1.5rem; /* relative to root (16px × 1.5 = 24px) */
+    }
+  </style>
+</head>
+<body>
+  <h2>Font Size Units Demo</h2>
+
+  <p class="px-example">This text uses <b>16px</b> (absolute size).</p>
+
+  <div style="font-size: 30px">
+    
+      <p style="font-size: 1.5em;">hello</p>
+    
+    <p style="font-size: 1 em ;">
+      
+      This text uses <b>1.2em</b> → relative to parent (20px × 1.2 = 24px).
+    </p>
+  </div>
+
+  <p style="font-size:1.5rem;">
+    This text uses <b>1.5rem</b> → relative to root (16px × 1.5 = 24px).
+  </p>
+</body>
+</html>
