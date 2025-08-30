@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      height: 2000px; 
+    }
+
+    .box {
+      width: 150px;
+      height: 80px;
+      color: white;
+      padding: 10px;
+      margin: 20px 0;
+    }
+
+   
+    .static {
+      background: gray;
+      position: static;
+      right: ;
+    }
+
+  
+    .relative {
+      background: blue;
+      position: relative;
+      top: 20px;  
+      left: 40px; 
+    }
+
+    
+    .absolute-container {
+      position: relative; 
+      border: 2px dashed black;
+      height: 200px;
+      margin: 30px 0;
+    }
+    .absolute {
+      background: green;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    
+    .fixed {
+      background: red;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+   
+    .sticky {
+      background: orange;
+      position: sticky;
+      top: 0; 
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Position Examples</h2>
+
+  <div class="box static">Static (default)</div>
+
+  <div class="box relative">Relative (moved 20px down, 40px right)</div>
+
+  <div class="absolute-container">
+    Parent Container (relative)
+    <div class="box absolute">Absolute (top-right inside parent)</div>
+  </div>
+
+  <div class="box sticky">Sticky (sticks at top when scrolling)</div>
+
+  <p>Scroll down to see the fixed element...</p>
+
+  <div class="box fixed">Fixed (always bottom-right)</div>
+</body>
+</html>
