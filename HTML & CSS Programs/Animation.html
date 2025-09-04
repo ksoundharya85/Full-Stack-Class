@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inline vs Block vs Inline-block</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+     
+.ball {
+  width: 50px;
+  height: 50px;
+  background: red;
+  border-radius: 50%;
+  position: relative;
+  /* Animation properties */
+  animation-name: bounce;              /* Name of the animation */
+  animation-duration: 2s;              /* Lasts 2 seconds */
+  animation-iteration-count: 1; /* Repeats forever */
+  animation-timing-function: ease-in-out; /* Speed curve */
+  animation-delay: 0.5s;               /* Waits 0.5s before starting */
+  animation-direction: normal;      /* Alternates up & down */
+}
+/* Define keyframes */
+@keyframes bounce {
+  from { margin-left: 50px; }
+  to { margin-left: 100px; }
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background: rgb(0, 17, 255);
+  /* border-radius: 50%; */
+  position: relative;
+  margin: 30px;
+  /* Animation properties */
+  animation-name: fade;              /* Name of the animation */
+  animation-duration: 4s;              /* Lasts 2 seconds */
+  animation-iteration-count: 2; /* Repeats forever */
+  animation-timing-function: ease-in-out; /* Speed curve */
+  animation-delay: 0.1s;               /* Waits 0.5s before starting */
+  animation-direction: normal;      /* Alternates up & down */
+}
+/* Define keyframes */
+@keyframes fade {
+  from { opacity:1; }
+  to { opacity: 0; }
+}
+
+.rotate{
+    width:100px;
+    height:100px;
+    background-color: black;
+    margin: 50px;
+    animation: rotatebox 4s linear infinite;
+}
+
+@keyframes rotatebox {
+  from { transform:rotate(0deg); }
+  to { transform:rotate(360deg); }
+}
+.mediaBox{
+    background-color: aqua;
+    padding: 100px 50px;
+    margin:30px
+}
+
+@media (max-width:900px){
+    .mediaBox{
+    background-color: rgb(0, 0, 0);
+    padding: 100px 50px;
+    margin:30px
+}
+}
+    </style>
+  </head>
+  <body>
+
+    <div class="ball">
+        
+    </div>
+    <div class="box">
+        
+    </div>
+     <div class="rotate">
+        
+    </div>
+    <div class="mediaBox">
+
+    </div>
+    <!-- <input type="text" class="input-class"> -->
+  </body>
+</html>
